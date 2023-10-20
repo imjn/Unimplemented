@@ -25,6 +25,9 @@ extension UserService: TestDependencyKey {
     )
 
     static let testValue: UserService = .init(
-        userProfile: unimplemented("\(Self.self).userProfile", placeholder: Self.previewValue.userProfile)
+        userProfile: unimplemented(
+            "\(Self.self).userProfile",
+            placeholder: Self.previewValue.userProfile // When I don't set this placeholder, the test succeeds.
+        )
     )
 }
