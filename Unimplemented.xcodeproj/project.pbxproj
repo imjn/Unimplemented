@@ -19,6 +19,9 @@
 		2B4E6CAD2AE279B1000BC1EA /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 2B4E6CAC2AE279B1000BC1EA /* Dependencies */; };
 		2B4E6CAF2AE27DFB000BC1EA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E6CAE2AE27DFB000BC1EA /* UserProfile.swift */; };
 		2B4E6CC12AE2827A000BC1EA /* ContentFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E6CB22AE2819F000BC1EA /* ContentFeatureTests.swift */; };
+		2BDFBE192B27CB31001C301B /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDFBE182B27CB31001C301B /* Welcome.swift */; };
+		2BDFBE1B2B27CCA3001C301B /* HomeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDFBE1A2B27CCA3001C301B /* HomeFeature.swift */; };
+		2BDFBE1D2B27CD1B001C301B /* ProfileFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDFBE1C2B27CD1B001C301B /* ProfileFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		2B4E6CAE2AE27DFB000BC1EA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		2B4E6CB22AE2819F000BC1EA /* ContentFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentFeatureTests.swift; sourceTree = "<group>"; };
 		2B4E6CB82AE28272000BC1EA /* UnimplementedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnimplementedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BDFBE182B27CB31001C301B /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		2BDFBE1A2B27CCA3001C301B /* HomeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeature.swift; sourceTree = "<group>"; };
+		2BDFBE1C2B27CD1B001C301B /* ProfileFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,9 @@
 			children = (
 				2B4E6C8D2AE27723000BC1EA /* UnimplementedApp.swift */,
 				2B4E6C8F2AE27723000BC1EA /* ContentFeature.swift */,
+				2BDFBE182B27CB31001C301B /* Welcome.swift */,
+				2BDFBE1A2B27CCA3001C301B /* HomeFeature.swift */,
+				2BDFBE1C2B27CD1B001C301B /* ProfileFeature.swift */,
 				2B4E6C912AE27725000BC1EA /* Assets.xcassets */,
 				2B4E6C932AE27725000BC1EA /* Unimplemented.entitlements */,
 				2B4E6C942AE27725000BC1EA /* Preview Content */,
@@ -230,8 +239,11 @@
 			files = (
 				2B4E6C902AE27723000BC1EA /* ContentFeature.swift in Sources */,
 				2B4E6C8E2AE27723000BC1EA /* UnimplementedApp.swift in Sources */,
+				2BDFBE1B2B27CCA3001C301B /* HomeFeature.swift in Sources */,
 				2B4E6CAF2AE27DFB000BC1EA /* UserProfile.swift in Sources */,
+				2BDFBE1D2B27CD1B001C301B /* ProfileFeature.swift in Sources */,
 				2B4E6CAA2AE2794C000BC1EA /* Dependency.swift in Sources */,
+				2BDFBE192B27CB31001C301B /* Welcome.swift in Sources */,
 				2B4E6C9D2AE27730000BC1EA /* UserService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,7 +544,7 @@
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = exactVersion;
-				version = 0.53.2;
+				version = 0.59.0;
 			};
 		};
 		2B4E6CA12AE27900000BC1EA /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
@@ -540,7 +552,7 @@
 			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation";
 			requirement = {
 				kind = exactVersion;
-				version = 0.7.1;
+				version = 0.8.0;
 			};
 		};
 		2B4E6CA62AE27922000BC1EA /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */ = {
